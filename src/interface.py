@@ -33,6 +33,10 @@ def main(image_path):
     predicted_name = TARGET_NAMES[pred_class]
     print(f"Predicted person: {predicted_name}")
 
+
+def predict_face(model, face_vector):
+    prediction = model.predict([face_vector])
+    return TARGET_NAMES[prediction[0]]
 if __name__ == '__main__':
     if len(sys.argv) != 2:
         print("Usage: python inference.py <path_to_image>")
