@@ -1,0 +1,24 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment variables
+.env
+*.env
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Model files or large binaries (optional if you want to exclude later)
+*.pkl
+*.h5
+*.joblib
+
+# VS Code and IDE settings
+.vscode/
+.idea/
