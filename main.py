@@ -13,7 +13,7 @@ images = lfw_people.images
 y = lfw_people.target
 
 # Load the trained model
-model = joblib.load('models/face_model_pca.pkl')
+model = joblib.load('models/face_model.pkl')
 
 # Select a random image to test
 idx = np.random.randint(0, len(X))

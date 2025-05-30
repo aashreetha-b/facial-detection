@@ -7,7 +7,7 @@ import os
 
 def evaluate_model():
     base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    model_path = os.path.join(base_dir, "models", "face_model.pkl")
+    model_path = os.path.join(base_dir, "models", "face_model_pca_tuned_50.pkl")
     (X_train, X_test, y_train, y_test), target_names = load_data()
 
     # Load the model
